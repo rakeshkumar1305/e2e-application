@@ -1,0 +1,6 @@
+{
+  "mobile.resourceTypes": [
+    "e2e-application/components/page"
+  ],
+  "README": "Indicate which page resource types should display the mobile emulators."
+}

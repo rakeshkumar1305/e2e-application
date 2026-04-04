@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/e2e-application" mode="merge"/>
+    <filter root="/content/e2e-application" mode="merge"/>
+    <filter root="/content/dam/e2e-application" mode="merge">
+        <exclude pattern="/content/dam/e2e-application(/.*)?"/>
+        <include pattern="/content/dam/e2e-application/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/e2e-application/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/e2e-application" mode="merge"/>
+</workspaceFilter>

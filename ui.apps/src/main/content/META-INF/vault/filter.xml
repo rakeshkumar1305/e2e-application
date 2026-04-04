@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/e2e-application/clientlibs"/>
+    <filter root="/apps/e2e-application/components"/>
+    <filter root="/apps/e2e-application/i18n"/>
+</workspaceFilter>
