@@ -1,0 +1,15 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+
+<sly
+  data-sly-call="${clientlib.all @ categories='e2e-application.detailsPage'}"
+/>
+<section class="section-1">
+  <img src="${properties.img}" alt=""  class="logo"/>
+  <div class="childs">
+    <p>Name: ${properties.firstName} ${properties.lastName}</p>
+    <p>Gender: ${properties.gender}</p>
+    <p>Qualification: ${properties.qualification}</p>
+    <div>About: ${properties.description @context= 'unsafe'}</div>
+    <!-- <p>Declaration: ${properties.tc}</p> -->
+  </div>
+</section>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+          
+                    <first-name
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="First Name"
+                        name="./firstName"
+                        emptyText="Enter your first name"/>
+                    <last-name
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Last Name"
+                        name="./lastName"
+                        emptyText="Enter your last name" />
+                    <description
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                        fieldLabel="Description"
+                        useFixedInlineToolbar="{Boolean}true"
+                        name="./description"
+                        emptyText="Describe yourself " />
+                    <gender
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Gender"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                        name="./gender" >
+                            <items jcr:primaryType="nt:unstructured">
+                                <male
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/radio"
+                                    text="Male"
+                                    value="male" />
+                                <female
+                                    jcr:primaryType="nt:unstructured" 
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/radio"
+                                    text="Female"
+                                    value="female" />
+                                <others
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/radio"
+                                    text="Others"
+                                    value="others" />
+                            </items>
+                        </gender>
+                        <qualification
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldLabel="Qualification"
+                            name="./qualification"
+                             >
+                            <items jcr:primaryType="nt:unstructured">
+                                <btech
+                                    jcr:primaryType="nt:unstructured"
+                                    text="B.Tech"
+                                    value="b.tech"/>
+                                <mtech
+                                    jcr:primaryType="nt:unstructured"
+                                    text="M.Tech"
+                                    value="m.tech" />
+                                <diploma
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Diploma"
+                                    value="diploma" />
+                                <mca
+                                   jcr:primaryType="nt:unstructured"
+                                   text="MCA"
+                                   value="mca" />
+                            </items>
+                        </qualification>
+                        <tc
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            text="I agree with all the above conditions"
+                            value="true"
+                            uncheckedValue="false"
+                            name="./tc"/>
+                        <picture 
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                            emptyText="Enter your first name"
+                            fieldLabel="Upload you Image"
+                            name="./img" />
+                        
+        </items>
+    </content>
+</jcr:root>
